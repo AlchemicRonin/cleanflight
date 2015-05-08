@@ -258,10 +258,10 @@ static const uint16_t multiPWM[] = {
     PWM4  | (MAP_TO_PWM_INPUT << 8),
     PWM9  | (MAP_TO_PWM_INPUT << 8),
     PWM10 | (MAP_TO_PWM_INPUT << 8),
-    PWM7  | (MAP_TO_MOTOR_OUTPUT << 8),
-    PWM14 | (MAP_TO_MOTOR_OUTPUT << 8),
-    PWM8  | (MAP_TO_MOTOR_OUTPUT << 8),
-    PWM13 | (MAP_TO_MOTOR_OUTPUT << 8),
+    PWM1  | (MAP_TO_MOTOR_OUTPUT << 8),
+    PWM2 | (MAP_TO_MOTOR_OUTPUT << 8),
+    PWM3  | (MAP_TO_MOTOR_OUTPUT << 8),
+    PWM4 | (MAP_TO_MOTOR_OUTPUT << 8),
     0xFFFF
 };
 
