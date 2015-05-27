@@ -20,18 +20,22 @@
 #define TARGET_BOARD_IDENTIFIER "CRAZE" // Crazepony
 #define USE_HARDWARE_REVISION_DETECTION
 
-#define LED0_GPIO GPIOC
-#define LED0_PIN Pin_14 // PC14 (LED)
+#define LED0_GPIO GPIOA
+#define LED0_PIN Pin_11 // PC11 (LED)
 #define LED0
-#define LED0_PERIPHERAL RCC_APB2Periph_GPIOC
-#define LED1_GPIO GPIOC
-#define LED1_PIN Pin_13 // PC13 (LED)
+#define LED0_PERIPHERAL RCC_APB2Periph_GPIOA
+#define LED1_GPIO GPIOA
+#define LED1_PIN Pin_8 // PC8 (LED)
 #define LED1
-#define LED1_PERIPHERAL RCC_APB2Periph_GPIOC
-#define LED2_GPIO GPIOC
-#define LED2_PIN Pin_15 // PC15 (LED)
+#define LED1_PERIPHERAL RCC_APB2Periph_GPIOA
+#define LED2_GPIO GPIOB
+#define LED2_PIN Pin_1 // PC1 (LED)
 #define LED2
-#define LED2_PERIPHERAL RCC_APB2Periph_GPIOC
+#define LED2_PERIPHERAL RCC_APB2Periph_GPIOB
+#define LED3_GPIO GPIOB
+#define LED3_PIN Pin_3 // PC3 (LED)
+#define LED3
+#define LED3_PERIPHERAL RCC_APB2Periph_GPIOB
 
 
 #define ACC
