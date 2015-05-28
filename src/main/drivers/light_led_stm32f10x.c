@@ -29,7 +29,7 @@
 
 void ledInit(void)
 {
-#if defined(LED0) || defined(LED1) || defined(LED2)
+#if defined(LED0) || defined(LED1) || defined(LED2) || defined(LED3)
     uint32_t i;
 
     struct {

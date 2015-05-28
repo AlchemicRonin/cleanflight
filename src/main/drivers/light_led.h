@@ -64,4 +64,19 @@
 #define LED2_ON                  do {} while(0)
 #endif
 
+#ifdef LED3
+#define LED3_TOGGLE              digitalToggle(LED3_GPIO, LED3_PIN)
+#ifndef LED3_INVERTED
+#define LED3_OFF                 digitalHi(LED3_GPIO, LED3_PIN)
+#define LED3_ON                  digitalLo(LED3_GPIO, LED3_PIN)
+#else
+#define LED3_OFF                 digitalLo(LED3_GPIO, LED3_PIN)
+#define LED3_ON                  digitalHi(LED3_GPIO, LED3_PIN)
+#endif // inverted
+#else
+#define LED3_TOGGLE              do {} while(0)
+#define LED3_OFF                 do {} while(0)
+#define LED3_ON                  do {} while(0)
+#endif
+
 void ledInit(void);

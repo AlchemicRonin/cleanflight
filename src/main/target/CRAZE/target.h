@@ -35,8 +35,7 @@
 #define LED3_GPIO GPIOB
 #define LED3_PIN Pin_3 // PC3 (LED)
 #define LED3
-#define LED3_PERIPHERAL RCC_APB2Periph_GPIOB
-
+#define LED3_PERIPHERAL 
 
 #define ACC
 #define USE_ACC_MPU6050
@@ -44,7 +43,11 @@
 #define GYRO
 #define USE_GYRO_MPU6050
 
-#define BRUSHED_MOTORS
+#define BARO
+#define USE_BARO_MS5611
+
+#define USE_ADC
+//#define BRUSHED_MOTORS
 
 #define USE_USART1
 #define USE_USART2
@@ -52,22 +55,22 @@
 #define SERIAL_PORT_COUNT 2
 
 #define USE_I2C
-#define I2C_DEVICE (I2CDEV_1)
+#define I2C_DEVICE (I2CDEV_2)
 
-// #define SOFT_I2C // enable to test software i2c
-// #define SOFT_I2C_PB1011 // If SOFT_I2C is enabled above, need to define pinout as well (I2C1 = PB67, I2C2 = PB1011)
-// #define SOFT_I2C_PB67
+//#define SOFT_I2C // enable to test software i2c
+//#define SOFT_I2C_PB1011 // If SOFT_I2C is enabled above, need to define pinout as well (I2C1 = PB67, I2C2 = PB1011)
+//#define SOFT_I2C_PB67
 
 #define SERIAL_RX
-//#define USE_SERVOS
+#define USE_SERVOS
 
-#define SPEKTRUM_BIND
+//#define SPEKTRUM_BIND
 // USART2, PA3
-#define BIND_PORT  GPIOA
-#define BIND_PIN   Pin_3
+//#define BIND_PORT  GPIOA
+//#define BIND_PIN   Pin_3
 
 // Since the CJMCU PCB has holes for 4 motors in each corner we can save same flash space by disabling support for other mixers.
-#define USE_QUAD_MIXER_ONLY
+//#define USE_QUAD_MIXER_ONLY
 
 #if (FLASH_SIZE > 256)
 #define BLACKBOX
