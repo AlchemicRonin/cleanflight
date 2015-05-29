@@ -43,23 +43,40 @@
 #define GYRO
 #define USE_GYRO_MPU6050
 
-#define BARO
-#define USE_BARO_MS5611
+//#define BARO
+//#define USE_BARO_MS5611
 
 #define USE_ADC
-//#define BRUSHED_MOTORS
+#define CURRENT_METER_ADC_GPIO      GPIOB
+#define CURRENT_METER_ADC_GPIO_PIN  GPIO_Pin_1
+#define CURRENT_METER_ADC_CHANNEL   ADC_Channel_9
 
+#define VBAT_ADC_GPIO               GPIOA
+#define VBAT_ADC_GPIO_PIN           GPIO_Pin_0
+#define VBAT_ADC_CHANNEL            ADC_Channel_0
+
+#define RSSI_ADC_GPIO               GPIOA
+#define RSSI_ADC_GPIO_PIN           GPIO_Pin_1
+#define RSSI_ADC_CHANNEL            ADC_Channel_1
+
+#define BRUSHED_MOTORS
+
+//#define USE_VCP
 #define USE_USART1
-#define USE_USART2
+//#define USE_USART2
+//#define USE_SOFTSERIAL1
+#define SERIAL_PORT_COUNT 1
 
-#define SERIAL_PORT_COUNT 2
+//#define SOFTSERIAL_1_TIMER TIM3
+//#define SOFTSERIAL_1_TIMER_TX_HARDWARE 1 // PWM 2
+//#define SOFTSERIAL_1_TIMER_RX_HARDWARE 2 // PWM 3
 
 #define USE_I2C
 #define I2C_DEVICE (I2CDEV_2)
 
-//#define SOFT_I2C // enable to test software i2c
+#define SOFT_I2C // enable to test software i2c
 //#define SOFT_I2C_PB1011 // If SOFT_I2C is enabled above, need to define pinout as well (I2C1 = PB67, I2C2 = PB1011)
-//#define SOFT_I2C_PB67
+#define SOFT_I2C_PB67
 
 #define SERIAL_RX
 #define USE_SERVOS
